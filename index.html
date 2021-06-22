@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="calcm"style="text-align: center;">
+
+        <h1 class="calc" >Calculator</h1>
+
+        <div class="calcu">
+                <input type="text" class="r" id="result"   >
+                <!-- <input type="button" class="cancel" value="C" id=""> -->
+                <button class="cancel" onclick="clearBox()" value="C">C</button>
+        </div>
+        <div class="first-row">
+            <input class="frow" type="button" value="1"  id="one" onclick="displayvalue('1')" />
+            <input class="frow" type="button" value="2" id="two" onclick="displayvalue('2')" />
+            <input class="frow" type="button" value="3" id="three" onclick="displayvalue('3')"  />
+            <input class="frow" type="button" value="+"  onclick="displayvalue('+')">
+          </div>
+          <div class="second-row">
+            <input class="frow" type="button" value="4"  id="one" onclick="displayvalue('4')" />
+            <input class="frow" type="button" value="5" id="two" onclick="displayvalue('5')"/>
+            <input class="frow" type="button" value="6" id="three" onclick="displayvalue('6')"  />
+            <input class="frow" type="button" value="-" onclick="displayvalue('-')" >
+          </div>
+          <div class="Third-row">
+            <input class="frow" type="button" value="7"  id="one" onclick="displayvalue('7')" />
+            <input class="frow" type="button" value="8" id="two" onclick="displayvalue('8')"/>
+            <input class="frow" type="button" value="9" id="three" onclick="displayvalue('9')" />
+            <input class="frow" type="button" value="X" onclick="displayvalue('*')" >
+          </div>
+          <div class="fourth-row">
+            <input class="frow" type="button" value="/"  id="one" onclick="displayvalue('/')" />
+            <input class="frow" type="button" value="0" id="two" onclick="displayvalue('0')"/>
+            <input class="frow" type="button" value="." id="three" onclick="displayvalue('.')"  />
+            <input class="frow" type="button" value="=" onclick="evaluateExpression()">
+          </div>
+          
+    </div>
+
+</body>
+
+</html>
